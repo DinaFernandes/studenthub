@@ -1,0 +1,52 @@
+nav {
+    background-color: #4F6D7A;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%
+}
+
+#main-menu {
+    display: flex;
+    gap: 50px;
+}
+
+#main-menu li {
+    list-style: none;
+}
+
+.logo {
+    color: #F3F6FC;
+    font-size: 32px;
+    font-family: "Madimi One"
+}
+
+#main-menu button, #main-menu a {
+    background-color: transparent;
+    font-family: "Catamaran";
+    font-size: 20px;
+    color:#F3F6FC;
+    border-width: 0;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+#main-menu .dropdown {
+    background-color: #4F6D7A;
+    color: #F3F6FC;
+    margin: 0px;
+    padding: 20px;
+    position: absolute;
+    display: none
+}
+
+#main-menu .dropdown a {
+    color:#F3F6FC
+}
+
+#main-menu .sub-menu:hover .dropdown {
+    display: block;
+}
+
+#laptop {
+    opacity: 0.7;
+}
