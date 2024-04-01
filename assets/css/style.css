@@ -1,8 +1,12 @@
+body {
+    margin: 0%;
+}
+
 nav {
     background-color: #4F6D7A;
     display: flex;
     justify-content: space-between;
-    padding: 20px 5%
+    padding: 5px 5%
 }
 
 #main-menu {
@@ -15,8 +19,10 @@ nav {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
     color: #F3F6FC;
-    font-size: 32px;
+    font-size: 48px;
     font-family: "Madimi One"
 }
 
@@ -47,6 +53,60 @@ nav {
     display: block;
 }
 
-#laptop {
-    opacity: 0.7;
+.laptop {
+    opacity: 0.5;
+}
+
+#header .header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 96px;
+    font-family: "Madimi One";
+    color: #4F6D7A
+}
+
+h2 {
+    font-size: 32px;
+    font-family: "Catamaran";
+    color: #4F6D7A;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: "Madimi One";
+    font-size: 55px;
+    color:#4F6D7A;
+}
+
+#features article {
+    position: relative;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr;
+    height: 300px;
+}
+
+h4 {
+    font-family: "Catamaran";
+    font-size: 24px;
+    color:#4F6D7A;
+    font-weight: 400;
+}
+
+p ul {
+    font-family: "Catamaran";
+    font-size: 24px;
+    color: #4F6D7A;
+    font-weight: 400;
 }
