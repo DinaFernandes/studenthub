@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Madimi+One&display=swap" rel="stylesheet">
+    <title>Sign Up</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">StudentHub</a>
+        <menu id="main-menu">
+            <li class="sub-menu">
+                <button class="features-nav">Features</button>
+                <menu class="dropdown">
+                    <li><a href="calendar.html">Calendar</a></li>
+                    <li><a href="">Assignment Tracker</a></li>
+                    <li><a href="">Notes</a></li>
+                </menu>
+            </li>
+            
+                <li><a class="demo-nav" href="">Request a Demo</a></li>
+                <li><a class="signup-nav" href="signup.html">Sign Up</a></li>
+        </menu>
+    </nav>
+
+    <div id="mobileNav" class="nav-overlay">
+
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+    <div class="overlay-content">
+      <a href="index.html">Home</a>
+      <a href="calendar.html">Calendar</a>
+      <a href="">Assignment Tracker</a>
+      <a href="">Notes</a>
+      <a href="signup.html">Sign Up</a>
+    </div>
+    </div>
+    <span class="open" onclick="openNav()"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+      </span>
+
+    <h2 class="get-started">
+        Time to get started!
+    </h2>
+
+    <form id="signup-form">
+        <div>
+        <label for="name">First Name</label>
+        <input type="text" id="name" placeholder="Dina">
+        <br>
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" placeholder="Fernandes">
+        <br>
+        <label for="school">College/University</label>
+        <input type="text" id="school">
+        <br>
+        <label for="email">College/University Email</label>
+        <input type="text" id="email">
+        <br>
+        </div>
+        <button id="submit">Submit</button>
+    </form>
+
+    <section id="need-help">
+        <h5>Need help or support?</h5>
+        <p class="description">Navigate with ease, find solutions swiftly, and <br>
+        discover a wealth of knowledge and support <br>
+        designed to address your queries and enhance <br>
+        your experience.
+        <ul class="contact">
+            <div class="email-svg">
+            <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 3.75H6.912a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H15M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859M12 3v8.25m0 0-3-3m3 3 3-3" />
+              </svg></div>Email us</li><br>
+            <div class="community-svg">
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+              </svg></div>Join our community</li><br>
+            <div class="chat-svg">
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z" />
+              </svg></div>Chat with us</li>
+        </ul></p>
+    </section>
+
+    <section id="footer">
+        <h3 id="start">Get started for free</h3>
+        <a class="demo" href="">Request a Demo</a>
+        <a class="signup" href="signup.html">Sign Up</a>
+    </section>
+
+    <section id="footer-color">
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

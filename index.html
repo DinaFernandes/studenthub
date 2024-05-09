@@ -12,31 +12,48 @@
         <span class="logo">StudentHub</span>
         <menu id="main-menu">
             <li class="sub-menu">
-                <button>Features</button>
+                <button class="features-nav">Features</button>
                 <menu class="dropdown">
-                    <li><a href="https://tcnj.edu">Calendar</a></li>
-                    <li><a href="https://tcnj.edu">Assignment Tracker</a></li>
-                    <li><a href="https://tcnj.edu">Notes</a></li>
+                    <li><a href="calendar.html">Calendar</a></li>
+                    <li><a href="" onclick="dontClick()">Assignment Tracker</a></li>
+                    <li><a href="">Notes</a></li>
                 </menu>
             </li>
-            <li class="sub-menu">
-                <li><a href="https://tcnj.edu">Request a Demo</a></li>
-                <li><a href="https://tcnj.edu">Sign Up</a></li>
-            </li>
+            
+                <li><a class="demo-nav" href="">Request a Demo</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            
         </menu>
     </nav>
+
+    <div id="mobileNav" class="nav-overlay">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+        <div class="overlay-content">
+          <a href="index.html">Home</a>
+          <a href="calendar.html">Calendar</a>
+          <a href="">Assignment Tracker</a>
+          <a href="">Notes</a>
+          <a href="signup.html">Sign Up</a>
+        </div>
+        </div>
+        <span class="open" onclick="openNav()"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+          </span>
+
     <section id="header">
-        <img class="laptop" src="assets/images/laptop.png" width="100%">
         <div class="header-overlay">
             <h1>StudentHub</h1>
             <h2 class="slogan">Stay organized and stay ahead!</h2>
-            <a href="https://tcnj.edu">Request a Demo</a>
+            <a class="demo" href="">Request a Demo</a>
         </div>
     </section>
-    <h3>FEATURES</h3>
-    <section id="features">
-        <article>
-            <a href="https://tcnj.edu"></a>
+    <h3 id="features">FEATURES</h3>
+    <section class="three-features">
+        <div class="box1">
+            <a href="calendar.html"></a>
             <h4>CALENDAR</h4>
             <p>
                 <ul>
@@ -45,9 +62,9 @@
                     <li>Daily</li>
                 </ul>
             </p>    
-        </article>
-        <article>
-            <a href="https://tcnj.edu"></a>
+        </div>
+        <div class="box2">
+            <a href=""></a>
             <h4>ASSIGNMENT TRACKER</h4>
             <p>
                 <ul>
@@ -56,9 +73,9 @@
                     <li>Mass tracker for everything</li>
                 </ul>
             </p>
-        </article>
-        <article>
-            <a href="https://tcnj.edu"></a>
+        </div>
+        <div class="box3">
+            <a href=""></a>
             <h4>NOTES</h4>
             <p>
                 <ul>
@@ -66,12 +83,59 @@
                     <li>Journaling</li>
                 </ul>
             </p>
-        </article>
+        </div>
     </section>
-    <section></section>
-    <section>
-        <h3>Get started for free</h3>
-        <a href="https://tcnj.edu">Request a Demo</a>
-        <a href="https://tcnj.edu">Sign Up</a>
+
+    <section class="calendar">
+        <h3 id="month-title">May 5-11</h3>
+        <div class="weekly-calendar">
+            <div class="day day-header">Sunday</div>
+            <div class="day day-header">Monday</div>
+            <div class="day day-header">Tuesday</div>
+            <div class="day day-header">Wednesday</div>
+            <div class="day day-header">Thursday</div>
+            <div class="day day-header">Friday</div>
+            <div class="day day-header">Saturday</div>
+
+        <div class="day"></div>
+            <div class="day event-space"></div>
+            <div class="day event-space"></div>
+            <div class="day event-space"></div>
+            <div class="day event-space"></div>
+            <div class="day event-space"></div>
+            <div class="day event-space"></div>
+        </div>
     </section>
+
+    <!-- <section class="tracker">
+        <h3>Upcoming Assignments</h3>
+        <label class="container">Assignment 1
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Assignment 2
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Assignment 3
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Assignment 4
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+    </section> -->
+
+    <section id="footer">
+        <h3 id="start">Get started for free</h3>
+        <a class="demo" href="">Request a Demo</a>
+        <a class="signup" href="signup.html">Sign Up</a>
+    </section>
+
+    <section id="footer-color">
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
 </body>

@@ -1,12 +1,16 @@
+/* Home Page CSS */
+
 body {
-    margin: 0%;
+    margin: 0;
 }
 
 nav {
     background-color: #4F6D7A;
     display: flex;
     justify-content: space-between;
-    padding: 5px 5%
+    padding: 5px 5%;
+    align-items: center;
+    margin: 0;
 }
 
 #main-menu {
@@ -23,7 +27,8 @@ nav {
     align-items: center;
     color: #F3F6FC;
     font-size: 48px;
-    font-family: "Madimi One"
+    font-family: "Madimi One";
+    text-decoration: none;
 }
 
 #main-menu button, #main-menu a {
@@ -42,7 +47,7 @@ nav {
     margin: 0px;
     padding: 20px;
     position: absolute;
-    display: none
+    display: none;
 }
 
 #main-menu .dropdown a {
@@ -53,26 +58,34 @@ nav {
     display: block;
 }
 
-.laptop {
-    opacity: 0.5;
-}
-
 #header .header-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+    background-image: url(../images/laptop.png);
+    background-position: 10%;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 525px;
+}
+
+.demo {
+    background-color: #4F6D7A;
+    font-family: "Catamaran";
+    font-size: 36px;
+    color: #F3F6FC;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    margin-bottom: 70px;
 }
 
 h1 {
     font-size: 96px;
     font-family: "Madimi One";
-    color: #4F6D7A
+    color: #4F6D7A;
+    margin-bottom: 0;
 }
 
 h2 {
@@ -80,21 +93,26 @@ h2 {
     font-family: "Catamaran";
     color: #4F6D7A;
     font-weight: 400;
+    margin-top: 0;
 }
 
-h3 {
+#features {
     font-family: "Madimi One";
     font-size: 55px;
     color:#4F6D7A;
+    padding-left: 80px;
 }
 
-#features article {
-    position: relative;
+.three-features {
     display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr, 1fr, 1fr;
-    grid-template-rows: 1fr, 1fr;
-    height: 300px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.box1, .box2, .box3 {
+    background-color: #CEDFDF;
 }
 
 h4 {
@@ -102,11 +120,519 @@ h4 {
     font-size: 24px;
     color:#4F6D7A;
     font-weight: 400;
+    text-align: center;
 }
 
-p ul {
+p, ul {
     font-family: "Catamaran";
     font-size: 24px;
     color: #4F6D7A;
     font-weight: 400;
+}
+
+#start {
+    font-family: "Madimi One";
+    font-size: 96px;
+    color:#4F6D7A;
+}
+
+#month-title {
+    font-family: "Madimi One";
+    font-size: 48px;
+    color:#4F6D7A;
+}
+
+.calendar {
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    font-family: "Catamaran";
+    background-color: #CEDFDF;
+    margin: 50px;
+}
+
+.weekly-calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0px;
+  }
+
+.day {
+    border: 0.5px solid #4F6D7A;
+    padding: 5px;
+    text-align: center;
+    font-size: 24px;
+    color:#4F6D7A;
+  }
+
+.event-space {
+    height: 500px;
+    border: 0.5px solid #4F6D7A;
+    padding: 5px;
+    overflow: auto;
+  }
+
+  /* .tracker {
+    font-family: "Madimi One";
+    font-size: 24px;
+    color: #4F6D7A;
+  }
+
+  .tracker li {
+    list-style-type: none;
+  }
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #4F6D7A;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+} */
+
+  #footer {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  #footer-color {
+    background-color: #4F6D7A;
+    height: 100px;
+  }
+
+  .signup {
+    color: #4F6D7A;
+    font-size: 36px;
+    font-family: "Catamaran";
+    text-decoration: none;
+    padding-left: 20px;
+  }
+
+  /* Calendar Page CSS */
+
+  #calendar-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+
+  #calendar-nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #calendar-nav li {
+    list-style: none;
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .calendar-title {
+    font-family: "Madimi One";
+    color: #4F6D7A;
+    font-size: 40px;
+  }
+
+  #calendar-nav-right a {
+    text-decoration: none;
+  }
+
+  #calendar-nav-right .dropdown {
+    background-color: #4F6D7A;
+    color: #F3F6FC;
+    margin: 0px;
+    padding: 20px;
+    position: absolute;
+    display: none;
+}
+
+#calendar-nav-right .dropdown a {
+    color:#F3F6FC
+}
+
+#calendar-nav-right .calendar-features:hover .dropdown {
+    display: none;
+    position: absolute;
+    font-size: 20px;
+}
+
+#calendar-nav-right .calendar-integrations:hover .dropdown {
+    display: block;
+    position: absolute;
+    font-size: 20px;
+}
+
+.horizontal-line {
+    border: none;
+    height: 1px;
+    background-color: #4F6D7A
+  }
+
+  #calendar-description {
+    text-align: center;
+  }
+
+  #calendar-nav-right button {
+    border: 0;
+    font-family: "Catamaran";
+    background-color: transparent;
+    color: #4F6D7A;
+    font-size: 28px;
+    display: flex;
+  }
+
+  .get-calendar-free a {
+    font-family: "Catamaran";
+    color: #4F6D7A;
+    font-size: 28px;
+    border: solid 1px #4F6D7A;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .calendar-svg {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Sign Up Page CSS */
+
+  .get-started {
+    font-family: "Madimi One";
+    font-size: 96px;
+    padding-left: 200px;
+    padding-top: 50px;
+  }
+
+  form {
+    font-family: "Catamaran";
+    font-size: 24px;
+    color: #4F6D7A;
+    padding-left: 200px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    text-align: left;
+    display: inline-block;
+    margin-right: 100px;
+  }
+
+  #name {
+    width: 200px;
+  }
+
+  #last-name {
+    width: 200px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  form input {
+    width: 400px;
+    height: 30px;
+    border: solid #4F6D7A;
+    border-radius: 10px;
+    border-width: 2px;
+    outline: none;
+    padding: 6px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    font-size: 18px;
+}
+
+::placeholder {
+  font-size: 18px;
+  color: #CEDFDF;
+}
+
+#submit {
+    font-family: "Madimi One";
+    font-size: 32px;
+    border: #4F6D7A;
+    border-radius: 10px;
+    background-color: #4F6D7A;
+    color: #F3F6FC;
+    width: 128px;
+    height: 44px;
+    margin-top: 20px;
+}
+
+h5 {
+    font-family: "Madimi One";
+    font-size: 50px;
+    color: #4F6D7A;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+#need-help {
+    background-color: #CEDFDF;
+    display: inline-block;
+    width: 548px;
+    height: 419px;
+    padding-left: 20px;
+    line-height: normal;
+    justify-content: space-between;
+}
+
+.contact {
+    font-size: 24px;
+    list-style-type: none;
+}
+
+.email-svg {
+  width: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
+.community-svg {
+  width: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
+.chat-svg {
+  width: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
+#mobileNav {
+  display: none;
+}
+
+.open {
+  display: none;
+}
+
+.nav-overlay {
+  height: 100%;
+  width: 0;
+  position: fixed; 
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #4F6D7A; 
+  background-color: rgba(#4F6D7A, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.nav-overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #CEDFDF;
+  display: block; 
+  transition: 0.3s;
+}
+
+.nav-overlay a:hover, .nav-overlay a:focus {
+  color: #F3F6FC;
+}
+
+.nav-overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media (max-width: 580px) {
+  form {
+    font-size: 18px;
+    padding-left: 70px;
+  }
+  form input {
+    width: 175px;
+    height: 15px;
+  }
+  .get-started {
+    font-size: 40px;
+    padding-left: 70px;
+    
+  }
+  #submit {
+    font-size: 18px;
+    width: 80px;
+    height: 30px;
+    margin-bottom: 20px;
+  }
+  nav {
+    height: 40px;
+  }
+  .logo {
+    font-size: 24px;
+  }
+  #main-menu a {
+    font-size: 16px;
+    align-items: center;
+    /* display: none; */
+  }
+  .demo-nav {
+    display: none;
+  }
+  .signup-nav {
+    display: none;
+  }
+  .features-nav {
+    padding-right: 0;
+    margin-right: 0;
+  }
+  #need-help {
+    width: 555px;
+    align-items: center;
+  }
+  h5 {
+    font-size: 50px;
+    text-align: center;
+  }
+  .description, .contact {
+    font-size: 24px;
+    }
+  .description {
+    text-align: center;
+  }
+  #start {
+    font-size: 60px;
+  }
+  .demo, .signup {
+    font-size: 24px;
+  }
+  ::placeholder {
+    font-size: 14px;
+  }
+#mobileNav {
+  display: block;
+}
+.open {
+  display: block;
+  width: 30px;
+  position: absolute;
+  top: 11px;
+  right: 45px;
+  color: #CEDFDF;
+}
+.nav-overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #4F6D7A;
+  opacity: 0.9;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+  .overlay-content {
+  position: relative;
+  top: 25%; 
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.nav-overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #CEDFDF;
+  font-family: "Catamaran";
+  display: block;
+  transition: 0.3s;
+}
+.nav-overlay a:hover, .nav-overlay a:focus {
+  color: #F3F6FC;
+}
+.nav-overlay .closebtn {
+  position: absolute;
+  top: 11px;
+  right: 45px;
+  font-size: 60px;
+}
+.features-nav {
+  display: none;
+}
+}
+
+@media (max-width: 580px) {
+  #main-menu a {
+    display: none;
+  }
+  #sub-menu {
+    display: none;
+  }
 }
